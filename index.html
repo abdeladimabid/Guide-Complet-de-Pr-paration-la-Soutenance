@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Defense Preparation Guide</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            border-radius: 20px;
+            padding: 60px 40px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            max-width: 600px;
+            width: 100%;
+            text-align: center;
+        }
+
+        h1 {
+            color: #2d3748;
+            font-size: 2rem;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .subtitle {
+            color: #718096;
+            font-size: 1rem;
+            margin-bottom: 40px;
+        }
+
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .link-card {
+            display: block;
+            text-decoration: none;
+            padding: 30px;
+            border-radius: 12px;
+            border: 2px solid #e2e8f0;
+            transition: all 0.3s ease;
+            text-align: left;
+        }
+
+        .link-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            border-color: #667eea;
+        }
+
+        .link-card.detailed {
+            background: linear-gradient(to right, #f7fafc, #ffffff);
+        }
+
+        .link-card.simple {
+            background: linear-gradient(to right, #f7fafc, #ffffff);
+        }
+
+        .link-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #2d3748;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .link-desc {
+            color: #718096;
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+
+        .icon {
+            font-size: 1.5rem;
+        }
+
+        .footer {
+            margin-top: 40px;
+            color: #a0aec0;
+            font-size: 0.875rem;
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 40px 24px;
+            }
+            
+            h1 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Defense Preparation Guide</h1>
+        <p class="subtitle">Choose your preferred format</p>
+        
+        <div class="links">
+            <a href="Guide_Soutenance.html" class="link-card detailed">
+                <div class="link-title">
+                    <span class="icon">📚</span>
+                    Guide Complet de Préparation à la Soutenance
+                </div>
+                <div class="link-desc">
+                    Ce guide complet a été élaboré à partir de l'analyse approfondie des données de validation des étudiants de 1ère année de l'année dernière. Il présente une vue d'ensemble des questions posées lors des soutenances, les taux de réussite par catégorie, les concepts qui nécessitent une attention particulière, ainsi qu'un plan de révision structuré sur 6 semaines.
+                </div>
+            </a>
+
+            <a href="Guide_Soutenance_Simple.html" class="link-card simple">
+                <div class="link-title">
+                    <span class="icon">📋</span>
+                    Référence rapide
+                </div>
+                <div class="link-desc">
+                    Résumé condensé avec les statistiques clés, les sujets prioritaires et les concepts essentiels pour une révision rapide avant votre soutenance.
+                </div>
+            </a>
+        </div>
+
+        <div class="footer">
+            Basé sur les données de validation des années précédentes.
+        </div>
+    </div>
+</body>
+</html>

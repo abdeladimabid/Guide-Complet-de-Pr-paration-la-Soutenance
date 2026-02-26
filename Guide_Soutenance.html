@@ -1,0 +1,2324 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guide Complet de Préparation à la Soutenance - 1ère Année</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 2.4cm 1.9cm;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html, body {
+			margin: 2cm;
+            padding: 0;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 11pt;
+            line-height: 1.6;
+            text-align: justify;
+        }
+
+        h1 {
+            font-size: 22pt;
+            text-align: center;
+            margin: 0 0 0.5em 0;
+            page-break-after: avoid;
+            color: #1a1a1a;
+        }
+
+        h2 {
+            font-size: 16pt;
+            margin: 1.5em 0 0.8em 0;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 0.3em;
+            color: #2c3e50;
+            page-break-after: avoid;
+        }
+
+        h3 {
+            font-size: 13pt;
+            margin: 1.2em 0 0.6em 0;
+            color: #34495e;
+            page-break-after: avoid;
+        }
+
+        h4 {
+            font-size: 11pt;
+            margin: 1em 0 0.5em 0;
+            color: #455a64;
+        }
+
+        p {
+            margin: 0.6em 0;
+            text-indent: 1.2em;
+        }
+
+        ul, ol {
+            margin: 0.5em 0;
+            padding-left: 2em;
+        }
+
+        li {
+            margin: 0.3em 0;
+        }
+
+        .cover-page {
+            page: first;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 90vh;
+            text-align: center;
+        }
+
+        .cover-title {
+            font-size: 28pt;
+            font-weight: bold;
+            margin-bottom: 0.5em;
+            color: #1a1a1a;
+        }
+
+        .cover-subtitle {
+            font-size: 14pt;
+            color: #555;
+            margin-bottom: 2em;
+        }
+
+        .cover-info {
+            font-size: 11pt;
+            color: #666;
+            margin-top: 3em;
+        }
+
+        .toc {
+            page-break-after: always;
+        }
+
+        .toc h2 {
+            text-align: center;
+        }
+
+        .toc ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .toc li {
+            margin: 0.4em 0;
+            font-size: 10pt;
+        }
+
+        .toc a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1em 0;
+            font-size: 9pt;
+        }
+
+        th, td {
+            border: 1px solid #999;
+            padding: 0.4em 0.5em;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f0f0f0;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        tr:nth-child(even) {
+            background-color: #fafafa;
+        }
+
+        .section {
+            margin: 1.5em 0;
+        }
+
+        .subsection {
+            margin: 1em 0;
+        }
+
+        code {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #f5f5f5;
+            padding: 0.1em 0.3em;
+            font-size: 9pt;
+        }
+
+        pre {
+            background-color: #f5f5f5;
+            padding: 0.8em;
+            overflow-x: auto;
+            font-size: 9pt;
+            margin: 0.8em 0;
+            border-left: 3px solid #666;
+        }
+
+        .highlight-box {
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+            padding: 0.8em;
+            margin: 1em 0;
+        }
+
+        .tip {
+            border-left: 4px solid #27ae60;
+            padding-left: 0.8em;
+            margin: 1em 0;
+            background-color: #f0f8f0;
+        }
+
+        .warning {
+            border-left: 4px solid #e74c3c;
+            padding-left: 0.8em;
+            margin: 1em 0;
+            background-color: #fef0f0;
+        }
+
+        .info {
+            border-left: 4px solid #3498db;
+            padding-left: 0.8em;
+            margin: 1em 0;
+            background-color: #f0f7fc;
+        }
+
+        .exercise-level {
+            font-weight: bold;
+            margin: 1em 0 0.5em 0;
+            padding: 0.3em 0.5em;
+            background-color: #eee;
+        }
+
+        .exercise-level.easy {
+            background-color: #d4edda;
+            color: #155724;
+        }
+
+        .exercise-level.medium {
+            background-color: #fff3cd;
+            color: #856404;
+        }
+
+        .exercise-level.hard {
+            background-color: #f8d7da;
+            color: #721c24;
+        }
+
+        .week-header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 0.5em;
+            margin: 1.5em 0 1em 0;
+        }
+
+        .day-header {
+            background-color: #34495e;
+            color: white;
+            padding: 0.3em 0.5em;
+            margin: 1em 0 0.5em 0;
+        }
+
+        .summary-box {
+            border: 2px solid #2c3e50;
+            padding: 1em;
+            margin: 1.5em 0;
+            background-color: #f8f9fa;
+        }
+
+        .summary-box h3 {
+            margin-top: 0;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 0.5em;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #ccc;
+            margin: 2em 0;
+        }
+
+        .two-columns {
+            display: flex;
+            gap: 2em;
+        }
+
+        .two-columns > div {
+            flex: 1;
+        }
+
+        @media print {
+            .cover-page {
+                page-break-after: always;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Page de couverture -->
+    <div class="cover-page">
+        <div class="cover-title">Guide Complet de Préparation à la Soutenance</div>
+        <div class="cover-subtitle">1ère Année - Analyse et Plan de Révision</div>
+        <div class="cover-info">
+            <p>Document d'analyse des données de validation des étudiants</p>
+            <p>Basé sur les résultats de l'année précédente</p>
+        </div>
+    </div>
+
+    <!-- Table des matières -->
+    <div class="toc">
+        <h2>Table des Matières</h2>
+        <ul>
+            <li>1. Analyse des Questions Posées</li>
+            <li>2. Concepts à Maîtriser Absolument</li>
+            <li>3. Conseils et Recommandations par Catégorie</li>
+            <li>4. Plan de Révision - 6 Semaines</li>
+            <li>5. Résumé des Points Clés</li>
+            <li>6. Annexe : Exercices Supplémentaires</li>
+        </ul>
+    </div>
+
+    <!-- Introduction -->
+    <h2>Introduction</h2>
+    <p>Ce guide complet a été élaboré à partir de l'analyse approfondie des données de validation des étudiants de 1ère année de l'année dernière. Il présente une vue d'ensemble des questions posées lors des soutenances, les taux de réussite par catégorie, les concepts qui nécessitent une attention particulière, ainsi qu'un plan de révision structuré sur 6 semaines.</p>
+    <p>L'objectif est de vous préparer de manière optimale à votre soutenance en identifiant les pièges courants et en vous fournissant les ressources nécessaires pour maîtriser chaque compétence évaluée.</p>
+
+    <hr>
+
+    <!-- Section 1: Analyse des Questions Posées -->
+    <h2>1. Analyse des Questions Posées</h2>
+    <p>Cette section présente une analyse détaillée des questions posées lors des soutenances de l'année dernière. Pour chaque catégorie, vous trouverez le nombre de tentatives, le taux de réussite, ainsi que les variantes de questions posées.</p>
+
+    <!-- 1.1 UML - Diagramme de Cas d'Utilisation -->
+    <h3>1.1 UML — Diagramme de Cas d'Utilisation</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Question</th>
+                <th>Variantes</th>
+                <th>Réussis</th>
+                <th>Échoués</th>
+                <th>Taux de Réussite</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Définir la différence entre include et extend</td>
+                <td>"différence entre include et extend", "qu'est-ce que l'extend", "expliquer l'include"</td>
+                <td>18</td>
+                <td>12</td>
+                <td>60%</td>
+            </tr>
+            <tr>
+                <td>Représenter les acteurs (notamment le visiteur)</td>
+                <td>"ajouter l'acteur visiteur", "représentation de l'acteur secondaire"</td>
+                <td>14</td>
+                <td>16</td>
+                <td>47%</td>
+            </tr>
+            <tr>
+                <td>Utilisation de la généralisation</td>
+                <td>"différence entre généralisation et extend", "quand utiliser la généralisation"</td>
+                <td>12</td>
+                <td>18</td>
+                <td>40%</td>
+            </tr>
+            <tr>
+                <td>Représentation des flèches (héritage, include, généralisation)</td>
+                <td>"distinction entre les flèches", "comment représenter l'héritage"</td>
+                <td>10</td>
+                <td>20</td>
+                <td>33%</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="highlight-box">
+        <strong>Analyse Globale — UML Cas d'Utilisation :</strong>
+        <p>Les étudiants ont particulièrement eu des difficultés avec la distinction conceptuelle entre include, extend et généralisation. La représentation graphique des flèches constitue un point faible majeur. De nombreux étudiants confondent les flèches de direction pour l'héritage avec celles des relations entre cas d'utilisation.</p>
+    </div>
+
+    <div class="warning">
+        <strong>Points Critiques Identifiés :</strong>
+        <ul>
+            <li>L'acteur « visiteur » est souvent absent des diagrammes</li>
+            <li>Les relations « include » et « extend » sont fréquemment confondues</li>
+            <li>La généralisation n'est pas assez utilisée quand elle serait appropriée</li>
+            <li>Les cas d'utilisation « about us » et « contact us » ne devraient pas apparaître</li>
+        </ul>
+    </div>
+
+    <!-- 1.2 UML - Diagramme de Classe -->
+    <h3>1.2 UML — Diagramme de Classe</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Question</th>
+                <th>Variantes</th>
+                <th>Réussis</th>
+                <th>Échoués</th>
+                <th>Taux de Réussite</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Représentation des clés étrangères (foreign keys)</td>
+                <td>"où mettre les foreign keys", "foreign key dans les entités"</td>
+                <td>8</td>
+                <td>22</td>
+                <td>27%</td>
+            </tr>
+            <tr>
+                <td>Classes abstraites</td>
+                <td>"pourquoi faire une classe abstraite", "comment nommer une classe abstraite"</td>
+                <td>16</td>
+                <td>14</td>
+                <td>53%</td>
+            </tr>
+            <tr>
+                <td>Relations many-to-many et tables pivots</td>
+                <td>"quand mettre une table pivot", "relation many-to-many"</td>
+                <td>10</td>
+                <td>20</td>
+                <td>33%</td>
+            </tr>
+            <tr>
+                <td>Cardinalités</td>
+                <td>"les cardinalités manquantes", "comment représenter les multiplicités"</td>
+                <td>12</td>
+                <td>18</td>
+                <td>40%</td>
+            </tr>
+            <tr>
+                <td>Agrégation vs Composition</td>
+                <td>"différence agrégation composition", "quand utiliser l'agrégation"</td>
+                <td>9</td>
+                <td>21</td>
+                <td>30%</td>
+            </tr>
+            <tr>
+                <td>Types de retour des méthodes</td>
+                <td>"les types de retour", "return type manquant"</td>
+                <td>11</td>
+                <td>19</td>
+                <td>37%</td>
+            </tr>
+            <tr>
+                <td>Conventions de nommage</td>
+                <td>"naming des classes", "comment nommer les entités"</td>
+                <td>14</td>
+                <td>16</td>
+                <td>47%</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="highlight-box">
+        <strong>Analyse Globale — UML Diagramme de Classe :</strong>
+        <p>Le diagramme de classe représente la zone où les étudiants ont perdu le plus de points. Les problèmes courants incluent : placement incorrect des clés étrangères en tant qu'attributs, absence de classes mères abstraites quand l'héritage serait pertinent, et non-compréhension de la nécessité des tables pivots pour les relations many-to-many.</p>
+    </div>
+
+    <div class="warning">
+        <strong>Erreurs Fréquentes Observées :</strong>
+        <ul>
+            <li>Placement incorrect des clés étrangères (devrait être dans la table pivot, pas dans les entités)</li>
+            <li>Absence de classe mère abstraite quand l'héritage est pertinent</li>
+            <li>Classes avec trop d'attributs (manque de granularité)</li>
+            <li>Relations circulaires ou triples liaisons</li>
+            <li>Pas de distinction entre client et admin</li>
+        </ul>
+    </div>
+
+    <!-- 1.3 SQL -->
+    <h3>1.3 SQL — Requêtes et Manipulation de Données</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Question</th>
+                <th>Variantes</th>
+                <th>Réussis</th>
+                <th>Échoués</th>
+                <th>Taux de Réussite</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Requêtes avec jointures</td>
+                <td>"afficher les messages d'un utilisateur", "requêtes avec JOIN"</td>
+                <td>20</td>
+                <td>10</td>
+                <td>67%</td>
+            </tr>
+            <tr>
+                <td>Fonctions d'agrégation (COUNT, SUM, AVG, MAX)</td>
+                <td>"nombre de réservations", "somme des paiements"</td>
+                <td>22</td>
+                <td>8</td>
+                <td>73%</td>
+            </tr>
+            <tr>
+                <td>GROUP BY et HAVING</td>
+                <td>"grouper par catégorie", "Having vs Where"</td>
+                <td>12</td>
+                <td>18</td>
+                <td>40%</td>
+            </tr>
+            <tr>
+                <td>Manipulation de dates</td>
+                <td>"requêtes avec date de 2025", "filtrer par date"</td>
+                <td>8</td>
+                <td>22</td>
+                <td>27%</td>
+            </tr>
+            <tr>
+                <td>Sous-requêtes</td>
+                <td>"sous-requêtes imbriquées", "requêtes complexes"</td>
+                <td>9</td>
+                <td>21</td>
+                <td>30%</td>
+            </tr>
+            <tr>
+                <td>Requêtes avec condition</td>
+                <td>"WHERE avec plusieurs conditions", "AND/OR"</td>
+                <td>24</td>
+                <td>6</td>
+                <td>80%</td>
+            </tr>
+            <tr>
+                <td>UPDATE et INSERT</td>
+                <td>"mettre à jour un statut", "insérer un enregistrement"</td>
+                <td>15</td>
+                <td>15</td>
+                <td>50%</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="highlight-box">
+        <strong>Analyse Globale — SQL :</strong>
+        <p>SQL représente un défi significatif pour les étudiants, particulièrement autour de la manipulation des dates et des jointures complexes. De nombreux étudiants ont du mal à combiner GROUP BY avec les fonctions d'agrégation correctement.</p>
+    </div>
+
+    <div class="info">
+        <strong>Exemples de Questions Difficiles :</strong>
+        <ul>
+            <li>« Écrire la requête permettant de retourner le nom d'utilisateur ayant le plus grand nombre d'items en 2025 »</li>
+            <li>« Afficher les mois qui ont un gain de plus de 2000 dhs »</li>
+            <li>« Écrire la requête permettant de retourner pour chaque utilisateur le plus long commentaire écrit »</li>
+        </ul>
+    </div>
+
+    <!-- 1.4 JavaScript -->
+    <h3>1.4 JavaScript — Logique et Algorithmes</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Question</th>
+                <th>Variantes</th>
+                <th>Réussis</th>
+                <th>Échoués</th>
+                <th>Taux de Réussite</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Trouver le mot le plus long/court</td>
+                <td>"mot le plus long dans une phrase", "plus petit mot"</td>
+                <td>22</td>
+                <td>8</td>
+                <td>73%</td>
+            </tr>
+            <tr>
+                <td>Compter les occurrences</td>
+                <td>"nombre de répétitions d'un caractère", "occurrences dans un tableau"</td>
+                <td>18</td>
+                <td>12</td>
+                <td>60%</td>
+</tr>
+            <tr>
+                <td>Inversion de chaîne/caractères</td>
+                <td>"reverse d'une chaîne", "inverser sans reverse()"</td>
+                <td>14</td>
+                <td>16</td>
+                <td>47%</td>
+            </tr>
+            <tr>
+                <td>Tableaux et recherche</td>
+                <td>"vérifier si un élément existe", "trouver un élément"</td>
+                <td>20</td>
+                <td>10</td>
+                <td>67%</td>
+            </tr>
+            <tr>
+                <td>Tri (bubble sort)</td>
+                <td>"trier par ordre croissant", "bubble sort"</td>
+                <td>10</td>
+                <td>20</td>
+                <td>33%</td>
+            </tr>
+            <tr>
+                <td>Palindrome</td>
+                <td>"vérifier si palindrome"</td>
+                <td>8</td>
+                <td>12</td>
+                <td>40%</td>
+            </tr>
+            <tr>
+                <td>Anagramme</td>
+                <td>"vérifier si anagramme"</td>
+                <td>6</td>
+                <td>14</td>
+                <td>30%</td>
+            </tr>
+            <tr>
+                <td>Parentheses validation</td>
+                <td>"valider les parenthèses", "balance des parenthèses"</td>
+                <td>7</td>
+                <td>18</td>
+                <td>28%</td>
+            </tr>
+            <tr>
+                <td>Compression de caractères</td>
+                <td>"aaabbbccccc → a3b3c5"</td>
+                <td>5</td>
+                <td>15</td>
+                <td>25%</td>
+            </tr>
+            <tr>
+                <td>Matrice en spirale</td>
+                <td>"parcourir une matrice en spirale"</td>
+                <td>3</td>
+                <td>12</td>
+                <td>20%</td>
+            </tr>
+            <tr>
+                <td>Trouver les paires</td>
+                <td>"paires dont la somme égale X"</td>
+                <td>6</td>
+                <td>14</td>
+                <td>30%</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="highlight-box">
+        <strong>Analyse Globale — JavaScript :</strong>
+        <p>Le raisonnement algorithmique en JavaScript est l'une des zones les plus faibles pour les étudiants. Beaucoup peuvent gérer la syntaxe de base mais ont des difficultés avec la résolution de problèmes et la pensée logique. La vitesse d'exécution est souvent trop lente pendant les évaluations.</p>
+    </div>
+
+    <div class="warning">
+        <strong>Problèmes Majeurs Identifiés :</strong>
+        <ul>
+            <li>Difficulté à démarrer un algorithme (ne savent pas par où commencer)</li>
+            <li>Erreurs de syntaxe importantes (oubli des parenthèses, confusion = et ==)</li>
+            <li>Dépendance excessive au compilateur pour détecter les erreurs</li>
+            <li>Manque de pratique d'algorithmes classiques</li>
+            <li>Problèmes de logique plutôt que de syntaxe</li>
+        </ul>
+    </div>
+
+    <!-- 1.5 POO -->
+    <h3>1.5 POO (PHP) — Programmation Orientée Objet</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Question</th>
+                <th>Variantes</th>
+                <th>Réussis</th>
+                <th>Échoués</th>
+                <th>Taux de Réussite</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Access Modifiers (public, private, protected)</td>
+                <td>"les types d'accès", "différence entre public et private"</td>
+                <td>25</td>
+                <td>5</td>
+                <td>83%</td>
+            </tr>
+            <tr>
+                <td>Classe abstraite</td>
+                <td>"c'est quoi une classe abstraite", "intérêt de l'abstraction"</td>
+                <td>20</td>
+                <td>10</td>
+                <td>67%</td>
+            </tr>
+            <tr>
+                <td>Méthode abstraite</td>
+                <td>"différence classe abstraite et méthode abstraite"</td>
+                <td>18</td>
+                <td>12</td>
+                <td>60%</td>
+            </tr>
+            <tr>
+                <td>Héritage</td>
+                <td>"créer une classe fille", "hériter d'une classe"</td>
+                <td>24</td>
+                <td>6</td>
+                <td>80%</td>
+            </tr>
+            <tr>
+                <td>Encapsulation</td>
+                <td>"c'est quoi l'encapsulation", "utilité de l'encapsulation"</td>
+                <td>14</td>
+                <td>16</td>
+                <td>47%</td>
+            </tr>
+            <tr>
+                <td>Polymorphisme</td>
+                <td>"définir le polymorphisme", "intérêt du polymorphisme"</td>
+                <td>10</td>
+                <td>20</td>
+                <td>33%</td>
+            </tr>
+            <tr>
+                <td>Static</td>
+                <td>"méthode statique", "propriété statique"</td>
+                <td>12</td>
+                <td>18</td>
+                <td>40%</td>
+            </tr>
+            <tr>
+                <td>Final</td>
+                <td>"classe finale", "méthode finale"</td>
+                <td>11</td>
+                <td>19</td>
+                <td>37%</td>
+            </tr>
+            <tr>
+                <td>Constructeur</td>
+                <td>"créer un constructeur", "__construct"</td>
+                <td>22</td>
+                <td>8</td>
+                <td>73%</td>
+            </tr>
+            <tr>
+                <td>this vs self vs parent</td>
+                <td>"différence entre this et self", "quand utiliser parent"</td>
+                <td>8</td>
+                <td>22</td>
+                <td>27%</td>
+            </tr>
+            <tr>
+                <td>Interfaces</td>
+                <td>"différence interface et classe abstraite"</td>
+                <td>6</td>
+                <td>14</td>
+                <td>30%</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="highlight-box">
+        <strong>Analyse Globale — POO :</strong>
+        <p>Bien que les concepts de base comme l'héritage et les modificateurs d'accès soient bien compris, les concepts avancés comme le polymorphisme, les modificateurs statiques, et la distinction this/self/parent posent des difficultés significatives. De nombreux étudiants mémorisent les concepts sans comprendre leur application pratique.</p>
+    </div>
+
+    <div class="info">
+        <strong>Mise en Situation Fréquente :</strong>
+        <ul>
+            <li>« Créer une classe Calculatrice avec une méthode statique multiplication(a, b) »</li>
+            <li>« Créer une classe abstraite Véhicule avec des classes filles Voiture et Moto »</li>
+            <li>« Implémenter le polymorphisme pour calculer la surface de formes différentes »</li>
+        </ul>
+    </div>
+
+    <!-- 1.6 HTML/CSS -->
+    <h3>1.6 HTML/CSS — Structure et Style</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Question</th>
+                <th>Variantes</th>
+                <th>Réussis</th>
+                <th>Échoués</th>
+                <th>Taux de Réussite</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Balises sémantiques</td>
+                <td>"les balises sémantiques HTML5", "header, footer, article"</td>
+                <td>22</td>
+                <td>8</td>
+                <td>73%</td>
+            </tr>
+            <tr>
+                <td>Display (flex, grid, block, inline)</td>
+                <td>"les valeurs de display", "flex vs grid"</td>
+                <td>14</td>
+                <td>16</td>
+                <td>47%</td>
+            </tr>
+            <tr>
+                <td>Div vs Span</td>
+                <td>"différence entre div et span"</td>
+                <td>12</td>
+                <td>18</td>
+                <td>40%</td>
+            </tr>
+            <tr>
+                <td>Margin vs Padding</td>
+                <td>"différence margin et padding"</td>
+                <td>20</td>
+                <td>10</td>
+                <td>67%</td>
+            </tr>
+            <tr>
+                <td>Box Model</td>
+                <td>"comprendre le modèle de boîte"</td>
+                <td>16</td>
+                <td>14</td>
+                <td>53%</td>
+            </tr>
+            <tr>
+                <td>display: none vs visibility: hidden</td>
+                <td>"différence entre none et hidden"</td>
+                <td>6</td>
+                <td>14</td>
+                <td>30%</td>
+            </tr>
+            <tr>
+                <td>Résultat d'un code CSS</td>
+                <td>"que produit ce code CSS"</td>
+                <td>18</td>
+                <td>12</td>
+                <td>60%</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- 1.7 Git -->
+    <h3>1.7 Git — Gestion de Versions</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Question</th>
+                <th>Variantes</th>
+                <th>Réussis</th>
+                <th>Échoués</th>
+                <th>Taux de Réussite</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Étapes pour pusher</td>
+                <td>"comment pusher sur GitHub", "git push"</td>
+                <td>28</td>
+                <td>2</td>
+                <td>93%</td>
+            </tr>
+            <tr>
+                <td>git reset vs restore</td>
+                <td>"différence entre reset et restore"</td>
+                <td>10</td>
+                <td>20</td>
+                <td>33%</td>
+            </tr>
+            <tr>
+                <td>git merge vs rebase</td>
+                <td>"différence entre merge et rebase"</td>
+                <td>14</td>
+                <td>16</td>
+                <td>47%</td>
+            </tr>
+            <tr>
+                <td>git add et staging</td>
+                <td>"rôle de git add", "zone de staging"</td>
+                <td>18</td>
+                <td>12</td>
+                <td>60%</td>
+            </tr>
+            <tr>
+                <td>git pull vs fetch</td>
+                <td>"différence pull et fetch"</td>
+                <td>16</td>
+                <td>14</td>
+                <td>53%</td>
+            </tr>
+            <tr>
+                <td>git checkout vs branch</td>
+                <td>"créer une branche", "basculer de branche"</td>
+                <td>20</td>
+                <td>10</td>
+                <td>67%</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- 1.8 Docker -->
+    <h3>1.8 Docker — Conteneurisation</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Question</th>
+                <th>Variantes</th>
+                <th>Réussis</th>
+                <th>Échoués</th>
+                <th>Taux de Réussite</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Définition de Docker</td>
+                <td>"c'est quoi Docker", "intérêt de Docker"</td>
+                <td>24</td>
+                <td>6</td>
+                <td>80%</td>
+            </tr>
+            <tr>
+                <td>Image vs Container</td>
+                <td>"différence entre image et conteneur"</td>
+                <td>18</td>
+                <td>12</td>
+                <td>60%</td>
+            </tr>
+            <tr>
+                <td>Docker avant Docker</td>
+                <td>"ce qui existait avant Docker", "virtualisation traditionnelle"</td>
+                <td>8</td>
+                <td>17</td>
+                <td>32%</td>
+            </tr>
+            <tr>
+                <td>VM vs Docker</td>
+                <td>"différence entre VM et conteneur"</td>
+                <td>12</td>
+                <td>13</td>
+                <td>48%</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- 1.9 Planification -->
+    <h3>1.9 Planification — Méthodologie Agile/Scrum</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Question</th>
+                <th>Variantes</th>
+                <th>Réussis</th>
+                <th>Échoués</th>
+                <th>Taux de Réussite</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Backlog</td>
+                <td>"c'est quoi le backlog"</td>
+                <td>12</td>
+                <td>13</td>
+                <td>48%</td>
+            </tr>
+            <tr>
+                <td>Epic vs User Stories</td>
+                <td>"différence entre epic et user stories"</td>
+                <td>14</td>
+                <td>11</td>
+                <td>56%</td>
+            </tr>
+            <tr>
+                <td>Sprint Review vs Rétrospective</td>
+                <td>"différence sprint review et rétrospective"</td>
+                <td>8</td>
+                <td>17</td>
+                <td>32%</td>
+            </tr>
+            <tr>
+                <td>Jira/Trello</td>
+                <td>"utilisation de Jira", "planning avec Trello"</td>
+                <td>20</td>
+                <td>5</td>
+                <td>80%</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <hr>
+
+    <!-- Section 2: Concepts à Maîtriser -->
+    <h2>2. Concepts à Maîtriser Absolument</h2>
+    <p>Basé sur l'analyse des résultats de l'année dernière, voici les concepts critiques que les étudiants doivent absolument maîtriser pour réussir leur soutenance.</p>
+
+    <h3>2.1 Priorité Haute (Échecs Fréquents)</h3>
+
+    <div class="warning">
+        <strong>Logique Algorithmique JavaScript</strong>
+        <p>C'est la zone avec le taux d'échec le plus élevé. Les étudiants doivent pratiquer ces algorithmes de base de manière répétée :</p>
+        <ul>
+            <li>Trouver le mot le plus long/court dans une chaîne</li>
+            <li>Compter les occurrences de caractères</li>
+            <li>Inverser des chaînes sans utiliser la méthode reverse()</li>
+            <li>Vérifier les palindromes et anagrammes</li>
+            <li>Valider les parenthèses équilibrées</li>
+            <li>Algorithmes de tri basiques (bubble sort)</li>
+            <li>Manipulation de tableaux (trouver les doublons, max/min)</li>
+        </ul>
+    </div>
+
+    <div class="warning">
+        <strong>Manipulation des Dates en SQL</strong>
+        <p>Nearly 73% failure rate on date-related queries. Students must understand:</p>
+        <ul>
+            <li>Comment filtrer par année, mois, jour avec les fonctions DATE</li>
+            <li>Travailler avec les plages de dates (BETWEEN, >, <)</li>
+            <li>Utiliser les fonctions YEAR(), MONTH(), DATE()</li>
+            <li>Gérer les dates dans les clauses WHERE</li>
+        </ul>
+    </div>
+
+    <div class="warning">
+        <strong>Relations du Diagramme de Classe UML</strong>
+        <p>La zone la plus confuse pour les étudiants :</p>
+        <ul>
+            <li>Quand utiliser l'agrégation vs la composition</li>
+            <li>Quand créer une table pivot pour les relations many-to-many</li>
+            <li>Comment représenter l'héritage correctement</li>
+            <li>Où les clés étrangères ne doivent PAS être placées (pas en tant qu'attributs)</li>
+        </ul>
+    </div>
+
+    <div class="warning">
+        <strong>Polymorphisme et Concepts POO Avancés</strong>
+        <p>Only 33% success rate:</p>
+        <ul>
+            <li>Comprendre pourquoi le polymorphisme est utile</li>
+            <li>Implémenter correctement les classes abstraites</li>
+            <li>Utiliser les méthodes et propriétés statiques de manière appropriée</li>
+            <li>Comprendre this vs self vs parent en PHP</li>
+        </ul>
+    </div>
+
+    <h3>2.2 Priorité Moyenne</h3>
+
+    <div class="info">
+        <strong>Commandes Git Avancées</strong>
+        <p>Les étudiants devraient comprendre :</p>
+        <ul>
+            <li>La différence entre git reset et git restore</li>
+            <li>Quand utiliser merge vs rebase</li>
+            <li>Comment fonctionne la zone de staging</li>
+            <li>Les opérations d'annulation basiques</li>
+        </ul>
+    </div>
+
+    <div class="info">
+        <strong>Conteneurisation Docker</strong>
+        <p>Connaissances de base nécessaires :</p>
+        <ul>
+            <td>Distinction image vs conteneur</td>
+            <li>Pourquoi Docker est important (vs VMs traditionnelles)</td>
+            <li>Compréhension basique du Dockerfile</li>
+        </ul>
+    </div>
+
+    <div class="info">
+        <strong>Flexbox vs Grid</strong>
+        <p>Maîtrise de la mise en page CSS :</p>
+        <ul>
+            <li>Quand utiliser flexbox vs CSS grid</li>
+            <li>Comprendre thoroughly les propriétés display</li>
+        </ul>
+    </div>
+
+    <hr>
+
+    <!-- Section 3: Conseils et Recommandations -->
+    <h2>3. Conseils et Recommandations par Catégorie</h2>
+
+    <!-- 3.1 UML -->
+    <h3>3.1 UML — Diagrammes</h3>
+
+    <div class="tip">
+        <strong>Conseil Principal :</strong> Treat UML diagrams as communication tools, not just homework assignments. The jury evaluates how well you can explain and justify your design choices.
+    </div>
+
+    <h4>Recommandations Spécifiques :</h4>
+
+    <h5>Diagramme de Cas d'Utilisation</h5>
+    <ul>
+        <li>Toujours inclure un acteur « visiteur » ou « guest » quand pertinent</li>
+        <li>Utiliser « include » pour le comportement obligatoire partagé entre cas d'utilisation</li>
+        <li>Utiliser « extend » pour le comportement optionnel ou exceptionnel</li>
+        <li>Utiliser la généralisation quand plusieurs acteurs partagent un comportement commun</li>
+        <li>Éviter les cas d'utilisation triviaux comme « about us » ou « contact us »</li>
+    </ul>
+
+    <h5>Diagramme de Classe</h5>
+    <ul>
+        <li>Ne JAMAIS mettre les clés étrangères en tant qu'attributs dans vos classes d'entités</li>
+        <li>Créer des classes mères abstraites quand plusieurs classes partagent des attributs communs</li>
+        <li>Utiliser les tables pivots (avec deux clés étrangères) pour les relations many-to-many</li>
+        <li>Toujours spécifier les types de données pour les attributs et les types de retour pour les méthodes</li>
+        <li>Différencier client et admin avec des classes séparées ou l'héritage</li>
+        <li>Éviter les relations circulaires entre les classes</li>
+    </ul>
+
+    <h4>Pratique Requise :</h4>
+    <ul>
+        <li>Dessinez au moins 3 diagrammes de classe complets avant la soutenance</li>
+        <li>Faites réviser vos diagrammes par un développeur senior ou un pair</li>
+        <li>Pratiquez l'explication de votre diagramme à quelqu'un qui ne connaît pas votre projet</li>
+    </ul>
+
+    <!-- 3.2 SQL -->
+    <h3>3.2 SQL — Requêtes</h3>
+
+    <div class="tip">
+        <strong>Conseil Principal :</strong> SQL is not about memorizing queries—it's about understanding data relationships. Think in terms of « what data do I need » and « how are the tables connected ».
+    </div>
+
+    <h4>Recommandations Spécifiques :</h4>
+
+    <h5>1. Maîtriser les Jointures</h5>
+    <ul>
+        <li><strong>INNER JOIN</strong> : Retourne les lignes correspondantes des deux tables</li>
+        <li><strong>LEFT JOIN</strong> : Retourne toutes les lignes de la table de gauche + les correspondances de droite</li>
+        <li>Comprendre quand utiliser chaque type</li>
+    </ul>
+
+    <h5>2. Fonctions d'Agrégation</h5>
+    <ul>
+        <li>Toujours utiliser GROUP BY quand on utilise COUNT, SUM, AVG, MAX</li>
+        <li>Utiliser HAVING pour filtrer les résultats agrégés (pas WHERE)</li>
+        <li>Comprendre la différence entre WHERE et HAVING</li>
+    </ul>
+
+    <h5>3. Manipulation de Dates</h5>
+    <ul>
+        <li>Apprendre les fonctions de date SQL : YEAR(), MONTH(), DAY(), DATE()</li>
+        <li>Pratiquez les requêtes comme : « tous les événements de 2025 », « ce mois-ci »</li>
+        <li>Utiliser BETWEEN pour les plages de dates</li>
+    </ul>
+
+    <h5>4. Sous-ReQUÊTES</h5>
+    <ul>
+        <li>Comprendre comment imbriquer les requêtes</li>
+        <li>Pratiquez les patrons courants : « highest in category », « latest in period »</li>
+    </ul>
+
+    <h4>Exercices Quotidiens :</h4>
+    <ul>
+        <li>Écrivez au moins 3 requêtes SQL par jour</li>
+        <li>Commencez par des requêtes simples et augmentez progressivement la complexité</li>
+        <li>Chronométrez-vous : vous devriez compléter les requêtes de difficulté moyenne en moins de 5 minutes</li>
+    </ul>
+
+    <!-- 3.3 JavaScript -->
+    <h3>3.3 JavaScript — Algorithmes</h3>
+
+    <div class="tip">
+        <strong>Conseil Principal :</strong> JavaScript logic problems test your problem-solving ability, not your memory. Practice breaking down problems into smaller steps before writing code.
+    </div>
+
+    <h4>Recommandations Spécifiques :</h4>
+
+    <h5>1. Ne Regardez Pas la Réponse Immédiatement</h5>
+    <ul>
+        <li>Passez au moins 10-15 minutes à essayer de résoudre chaque problème</li>
+        <li>Écrivez d'abord votre approche en langage clair</li>
+        <li>Ne consultez les solutions qu'après avoir véritablement essayé</li>
+    </ul>
+
+    <h5>2. Maîtrisez les Bases</h5>
+    <ul>
+        <li><strong>Manipulation de chaînes</strong> : split(), indexOf(), substring(), length</li>
+        <li><strong>Méthodes de tableaux</strong> : push(), pop(), forEach(), map(), filter(), reduce()</li>
+        <li><strong>Boucles</strong> : for, while, do-while</li>
+        <li><strong>Conditions</strong> : if/else, switch, ternary operators</li>
+    </ul>
+
+    <h5>3. Pratiquez les Algorithmes Classiques</h5>
+    <ul>
+        <li>Vérification de palindrome</li>
+        <li>Détection d'anagrammes</li>
+        <li>Trouver les doublons</li>
+        <li>Tri (bubble sort, tri basique)</li>
+        <li>Inversion de chaîne sans reverse()</li>
+        <li>Comptage de caractères</li>
+    </ul>
+
+    <h5>4. Ne Dépendez Pas du Compilateur</h5>
+    <ul>
+        <li>Pratiquez l'écriture de code sur papier ou tableau blanc</li>
+        <li>Apprenez à identifier vous-même les erreurs de syntaxe</li>
+        <li>Comprenez les messages d'erreur — pas seulement qu'il y a une erreur</li>
+    </ul>
+
+    <h4>Exercice par Jour :</h4>
+    <ul>
+        <li>Jour 1 : Manipulation de chaînes (reverse, mot le plus long)</li>
+        <li>Jour 2 : Opérations sur tableaux (filter, map, reduce)</li>
+        <li>Jour 3 : Pratique d'algorithmes (tri, recherche)</li>
+        <li>Jour 4 : Pratique mixte</li>
+        <li>Jour 5 : Révision et zones faibles</li>
+    </ul>
+
+    <!-- 3.4 POO -->
+    <h3>3.4 POO (PHP)</h3>
+
+    <div class="tip">
+        <strong>Conseil Principal :</strong> POO is about thinking in terms of objects and relationships, not just syntax. Always ask yourself: « What does this represent in the real world? ».
+    </div>
+
+    <h4>Recommandations Spécifiques :</h4>
+
+    <h5>1. Access Modifiers</h5>
+    <ul>
+        <li><strong>public</strong> : Accessible partout</li>
+        <li><strong>protected</strong> : Accessible dans la classe et les sous-classes</li>
+        <li><strong>private</strong> : Accessible uniquement dans la classe conteneur</li>
+    </ul>
+
+    <h5>2. Classes Abstraites</h5>
+    <ul>
+        <li>À utiliser quand vous voulez définir une structure commune pour des classes liées</li>
+        <li>Ne peuvent pas être instanciées directement — doivent être étendues</li>
+        <li>Peut contenir des méthodes abstraites (sans corps) et des méthodes régulières</li>
+    </ul>
+
+    <h5>3. Interfaces</h5>
+    <ul>
+        <li>À utiliser quand vous voulez définir un contrat sans implémentation</li>
+        <li>Une classe peut implémenter plusieurs interfaces</li>
+        <li>Toutes les méthodes dans une interface doivent être publiques</li>
+    </ul>
+
+    <h5>4. Héritage</h5>
+    <ul>
+        <li>À utiliser pour éviter la duplication de code</li>
+        <li>La classe enfant hérite de tous les membres non privés</li>
+        <li>Peut redéfinir les méthodes parentes (polymorphisme)</li>
+    </ul>
+
+    <h5>5. Static</h5>
+    <ul>
+        <li>Appartient à la classe, pas aux instances</li>
+        <li>Accédé via ClassName::$propriete</li>
+        <li>Utile pour les compteurs, la configuration partagée</li>
+    </ul>
+
+    <h5>6. this vs self vs parent</h5>
+    <ul>
+        <li><strong>$this</strong> : Fait référence à l'instance actuelle</li>
+        <li><strong>self</strong> : Fait référence à la classe actuelle (contexte statique)</li>
+        <li><strong>parent</strong> : Fait référence à la classe parente</li>
+    </ul>
+
+    <h4>Mise en Situation Pratique :</h4>
+    <p>Pratiquez ces exercices courants jusqu'à ce que vous puissiez les faire en moins de 10 minutes :</p>
+    <ul>
+        <li>Créer une classe abstraite avec une sous-classe concrète</li>
+        <li>Implémenter l'héritage avec redéfinition de méthodes</li>
+        <li>Utiliser les propriétés statiques pour compter les instances</li>
+        <li>Implémenter une calculatrice simple avec des méthodes statiques</li>
+    </ul>
+
+    <!-- 3.5 HTML/CSS -->
+    <h3>3.5 HTML/CSS</h3>
+
+    <div class="tip">
+        <strong>Conseil Principal :</strong> Think of HTML as structure (semantics) and CSS as presentation. Good developers understand both and know how they work together.
+    </div>
+
+    <h4>Recommandations Spécifiques :</h4>
+
+    <h5>1. Balises Sémantiques</h5>
+    <p>Utilisez la bonne balise pour le bon usage :</p>
+    <ul>
+        <li><code>&lt;header&gt;</code> : En-tête de page ou de section</li>
+        <li><code>&lt;nav&gt;</code> : Liens de navigation</li>
+        <li><code>&lt;main&gt;</code> : Zone de contenu principal</li>
+        <li><code>&lt;article&gt;</code> : Contenu autonome</li>
+        <li><code>&lt;section&gt;</code> : Regroupement thématique</li>
+        <li><code>&lt;footer&gt;</code> : Pied de page</li>
+        <li><code>&lt;aside&gt;</code> : Contenu secondaire mais lié</li>
+    </ul>
+
+    <h5>2. Propriétés Display</h5>
+    <ul>
+        <li><strong>block</strong> : Prend toute la largeur, empilés verticalement</li>
+        <li><strong>inline</strong> : Prend seulement la largeur nécessaire, pas de sauts de ligne</li>
+        <li><strong>inline-block</strong> : Inline mais avec propriétés de bloc</li>
+        <li><strong>flex</strong> : Mise en page unidimensionnelle (ligne OU colonne)</li>
+        <li><strong>grid</strong> : Mise en page bidimensionnelle (lignes ET colonnes)</li>
+        <li><strong>none</strong> : Complètement caché</li>
+    </ul>
+
+    <h5>3. Box Model</h5>
+    <p>Compréhension essentielle :</p>
+    <p>Contenu → padding → border → margin</p>
+    <p>Utilisez box-sizing: border-box pour inclure padding/border dans la largeur</p>
+
+    <h5>4. Flexbox vs Grid</h5>
+    <ul>
+        <li>Flexbox : Meilleur pour les mises en page 1D (barres de navigation, rangées de cartes)</li>
+        <li>Grid : Meilleur pour les mises en page 2D (mises en page de pages, tableaux de bord)</li>
+    </ul>
+
+    <!-- 3.6 Git -->
+    <h3>3.6 Git</h3>
+
+    <div class="tip">
+        <strong>Conseil Principal :</strong> Git is essential for collaboration and code management. Learn the concepts, not just the commands—understanding WHY matters more than memorizing HOW.
+    </div>
+
+    <h4>Commandes Essentielles à Maîtriser :</h4>
+    <pre>
+git init          # Initialiser un dépôt
+git clone         # Cloner un dépôt distant
+git add           # Indexer les changements
+git commit        # Valider les changements indexés
+git push          # Télécharger vers le distant
+git pull          # Télécharger et fusionner
+git fetch         # Télécharger sans fusionner
+git branch        # Lister/créer des branches
+git checkout      # Basculer de branches
+git merge         # Fusionner des branches</pre>
+
+    <h5>Différence Reset vs Restore</h5>
+    <ul>
+        <li><strong>git reset</strong> : Déplace les changements de l'index vers le répertoire de travail, peut modifier l'historique des commits</li>
+        <li><strong>git restore</strong> : Met fin aux changements dans le répertoire de travail, n'affecte pas l'historique des commits</li>
+    </ul>
+
+    <h5>Merge vs Rebase</h5>
+    <ul>
+        <li><strong>merge</strong> : Crée un commit de fusion, préserve l'historique</li>
+        <li><strong>rebase</strong> : Réécrit les commits au-dessus d'une autre branche, historique plus propre</li>
+    </ul>
+
+    <h5>Meilleures Pratiques :</h5>
+    <ul>
+        <li>Faites des petits commits fréquents</li>
+        <li>Écrivez des messages de commit clairs</li>
+        <li>Utilisez des branches pour les fonctionnalités</li>
+        <li>Toujours pull avant de pusher</li>
+        <li>Utilisez .gitignore pour les fichiers sensibles</li>
+    </ul>
+
+    <!-- 3.7 Docker -->
+    <h3>3.7 Docker</h3>
+
+    <div class="tip">
+        <strong>Conseil Principal :</strong> Docker is about consistency and isolation. Think of it as « packaging your entire environment » so your code runs the same everywhere.
+    </div>
+
+    <h4>Concepts Fondamentaux :</h4>
+    <ul>
+        <li><strong>Image</strong> : Un modèle en lecture seule (comme>
+        <li><strong>Container</strong> : une classe)</li Une instance en cours d'exécution d'une image (comme un objet)</li>
+        <li><strong>Dockerfile</strong> : Script qui définit comment construire une image</li>
+    </ul>
+
+    <h5>Différence VM vs Conteneur</h5>
+    <ul>
+        <li><strong>VM</strong> : Système d'exploitation complet, plus lourd, plus d'isolation</li>
+        <li><strong>Conteneur</strong> : Partage le kernel du système hôte, plus léger, plus rapide</li>
+    </ul>
+
+    <h5>Commandes de Base :</h5>
+    <pre>
+docker build      # Construire une image depuis le Dockerfile
+docker run        # Exécuter un conteneur depuis une image
+docker ps         # Lister les conteneurs en cours
+docker stop       # Arrêter un conteneur
+docker images     # Lister les images
+docker rm         # Supprimer un conteneur</pre>
+
+    <h5>Pour la Soutenance :</h5>
+    <ul>
+        <li>Soyez prêt à expliquer pourquoi vous avez utilisé Docker</li>
+        <li>Connaissez les bénéfices : consistance, isolation, reproductibilité</li>
+        <li>Comprenez le networking basique des conteneurs</li>
+    </ul>
+
+    <hr>
+
+    <!-- Section 4: Plan de Révision -->
+    <h2>4. Plan de Révision — 6 Semaines</h2>
+    <p>Ce plan de révision détaillé sur 6 semaines est conçu pour vous préparer de manière complète à votre soutenance. Chaque semaine se concentre sur des zones spécifiques identifiées comme problématiques dans l'évaluation de l'année dernière.</p>
+
+    <!-- Semaine 1 -->
+    <div class="week-header">
+        <h2 style="margin:0;border:none;padding:0;color:white;">Semaine 1 : Fondamentaux UML</h2>
+    </div>
+    <p><strong>Objectif de la Semaine :</strong> Maîtriser les diagrammes UML, en particulier le diagramme de classe qui constitue le point faible principal des étudiants.</p>
+
+    <div class="day-header">Jour 1 — Introduction et Diagramme de Cas d'Utilisation</div>
+    <h4>Contenu Théorique :</h4>
+    <ul>
+        <li>Qu'est-ce que l'UML et son importance dans le développement</li>
+        <li>Les différents types de diagrammes</li>
+        <li>Diagramme de cas d'utilisation : acteurs, cas d'utilisation, relations</li>
+        <li>Différence entre include et extend</li>
+        <li>Utilisation de la généralisation</li>
+    </ul>
+
+    <h4>Ressources :</h4>
+    <ul>
+        <li>Vidéo : « UML Use Case Diagram Tutorial » sur YouTube</li>
+        <li>Livre : « UML Distilled » de Martin Fowler (chapitres 1-3)</li>
+        <li>Site : https://www.uml-diagrams.org/use-case-diagrams.html</li>
+    </ul>
+
+    <h4>Exercices — Niveau Facile :</h4>
+    <div class="exercise-level easy">Facile</div>
+    <ol>
+        <li>Dessinez un diagramme de cas d'utilisation pour un système de bibliothèque
+            <ul>
+                <li>Acteurs : Membre, Bibliothécaire</li>
+                <li>Cas : Emprunter livre, Retourner livre, Rechercher livre</li>
+            </ul>
+        </li>
+        <li>Identifiez les relations « include » dans le scénario suivant : « Pour s'inscrire à un cours, l'étudiant doit d'abord créer un compte et vérifier son email »</li>
+        <li>Créez un diagramme avec généralisation : Système de paiement avec PaiementCarte, PaiementPayPal, PaiementVirement</li>
+    </ol>
+
+    <h4>Exercices — Niveau Moyen :</h4>
+    <div class="exercise-level medium">Moyen</div>
+    <ol>
+        <li>Analysez un système de réservation de vols et identifiez les cas d'utilisation avec include/extend</li>
+        <li>Créez un diagramme avec au moins 3 acteurs et 8 cas d'utilisation</li>
+        <li>Modélisez un système de e-commerce avec acheteur, vendeur, et administrateur</li>
+    </ol>
+
+    <h4>Exercices — Niveau Difficile :</h4>
+    <div class="exercise-level hard">Difficile</div>
+    <ol>
+        <li>Créez un diagramme de cas d'utilisation complet pour une plateforme de covoiturage
+            <ul>
+                <li>Incluez : réservation, évaluation, paiement, gestion des trajets</li>
+                <li>Utilisez include, extend, et généralisation</li>
+            </ul>
+        </li>
+        <li>Expliquez verbalement (comme en soutenance) chaque relation de votre diagramme</li>
+    </ol>
+
+    <div class="day-header">Jour 2 — Diagramme de Classe : Fondamentaux</div>
+    <h4>Contenu Théorique :</h4>
+    <ul>
+        <li>Classes et objets</li>
+        <li>Attributs et méthodes</li>
+        <li>Visibilité (public, private, protected)</li>
+        <li>Types de données</li>
+        <li>Conventions de nommage</li>
+    </ul>
+
+    <h4>Exercices — Niveau Facile :</h4>
+    <div class="exercise-level easy">Facile</div>
+    <ol>
+        <li>Créez une classe « Utilisateur » avec : id, nom, email, motDePasse</li>
+        <li>Ajoutez les getters et setters pour chaque attribut</li>
+        <li>Représentez la classe en UML avec les bons types</li>
+    </ol>
+
+    <h4>Exercices — Niveau Moyen :</h4>
+    <div class="exercise-level medium">Moyen</div>
+    <ol>
+        <li>Créez un diagramme avec trois classes : Client, Commande, Produit
+            <ul>
+                <li>Un client peut passer plusieurs commandes</li>
+                <li>Une commande contient plusieurs produits</li>
+            </ul>
+        </li>
+        <li>Définissez les cardinalités correctement</li>
+        <li>Identifiez où placer les clés étrangères</li>
+    </ol>
+
+    <h4>Exercices — Niveau Difficile :</h4>
+    <div class="exercise-level hard">Difficile</div>
+    <ol>
+        <li>Modélisez un système de gestion de formation :
+            <ul>
+                <li>Étudiant, Cours, Inscription, Note</li>
+                <li>Un étudiant s'inscrit à plusieurs cours</li>
+                <li>Chaque cours a plusieurs notes</li>
+            </ul>
+        </li>
+        <li>Justifiez vos choix de cardinalités</li>
+    </ol>
+
+    <div class="day-header">Jour 3 — Relations Avancées</div>
+    <h4>Contenu Théorique :</h4>
+    <ul>
+        <li>Association, agrégation, composition</li>
+        <li>Héritage et généralisation</li>
+        <li>Relations many-to-many et tables pivots</li>
+        <li>Classes abstraites</li>
+    </ul>
+
+    <h4>Exercices — Niveau Facile :</h4>
+    <div class="exercise-level easy">Facile</div>
+    <ol>
+        <li>Distinguez agrégation vs composition :
+            <ul>
+                <li>Université et Départements (composition)</li>
+                <li>Équipe et Joueurs (agrégation)</li>
+            </ul>
+        </li>
+        <li>Créez un héritage : Animal → Chien, Chat</li>
+    </ol>
+
+    <h4>Exercices — Niveau Moyen :</h4>
+    <div class="exercise-level medium">Moyen</div>
+    <ol>
+        <li>Créez un diagramme avec relation many-to-many :
+            <ul>
+                <li>Étudiant et Cours (table pivot Inscription)</li>
+            </ul>
+        </li>
+        <li>Ajoutez des attributs à la table pivot (dateInscription, statut)</li>
+        <li>Représentez une classe abstraite « Personnage » avec « Héros » et « Méchant »</li>
+    </ol>
+
+    <h4>Exercices — Niveau Difficile :</h4>
+    <div class="exercise-level hard">Difficile</div>
+    <ol>
+        <li>Système complet de gestion de bibliothèque :
+            <ul>
+                <li>Livre, Auteur, Éditeur, Membre, Emprunt</li>
+                <li>Un auteur peut écrire plusieurs livres</li>
+                <li>Un livre a un seul éditeur</li>
+                <li>Un membre peut faire plusieurs emprunts</li>
+            </ul>
+        </li>
+        <li>Identifiez toutes les relations et leur type</li>
+        <li>Expliquez pourquoi vous avez choisi chaque type de relation</li>
+    </ol>
+
+    <div class="day-header">Jour 4 — Erreurs Courantes et Corrections</div>
+    <h4>Contenu Théorique :</h4>
+    <ul>
+        <li>Erreurs fréquemment observées en soutenance</li>
+        <li>Foreign keys : où les placer ?</li>
+        <li>Classes trop grandes : comment diviser</li>
+        <li>Conventions de nommage</li>
+    </ul>
+
+    <h4>Exercices — Niveau Facile :</h4>
+    <div class="exercise-level easy">Facile</div>
+    <ol>
+        <li>Identifiez les erreurs dans le diagramme suivant :
+            <ul>
+                <li>Classe « User » avec 50 attributs</li>
+                <li>Foreign key « id_commande » dans la classe « User »</li>
+                <li>Pas de distinction entre client et admin</li>
+            </ul>
+        </li>
+    </ol>
+
+    <h4>Exercices — Niveau Moyen :</h4>
+    <div class="exercise-level medium">Moyen</div>
+    <ol>
+        <li>Corrigez le diagramme problématique :
+            <ul>
+                <li>Séparez en classes appropriées</li>
+                <li>Supprimez les foreign keys mal placées</li>
+                <li>Ajoutez les relations manquantes</li>
+            </ul>
+        </li>
+        <li>Refactorisez une classe avec trop d'attributs</li>
+    </ol>
+
+    <h4>Exercices — Niveau Difficile :</h4>
+    <div class="exercise-level hard">Difficile</div>
+    <ol>
+        <li>Take an existing poor diagram and completely redesign it</li>
+        <li>Present your corrections as you would in the soutenance</li>
+        <li>Justify each change with concrete reasons</li>
+    </ol>
+
+    <div class="day-header">Jour 5 — Pratique Intégrative</div>
+    <h4>Activité :</h4>
+    <ul>
+        <li>Review complete with a peer or mentor</li>
+        <li>Practice explaining your diagrams verbally</li>
+        <li>Time yourself: aim for 5 minutes per diagram</li>
+        <li>Receive feedback and iterate</li>
+    </ul>
+
+    <h4>Examen Blanc :</h4>
+    <ol>
+        <li>Dessinez le diagramme de classe pour un système de réservation de restaurant</li>
+        <li>Expliquez chaque relation en 30 secondes maximum</li>
+        <li>Identifiez les erreurs potentielles</li>
+    </ol>
+
+    <!-- Semaine 2 -->
+    <div class="week-header">
+        <h2 style="margin:0;border:none;padding:0;color:white;">Semaine 2 : SQL et Base de Données</h2>
+    </div>
+    <p><strong>Objectif de la Semaine :</strong> Maîtriser les requêtes SQL, particulièrement les jointures, les fonctions d'agrégation, et la manipulation de dates.</p>
+
+    <div class="day-header">Jour 1 — SELECT, WHERE, et Tri</div>
+    <h4>Contenu Théorique :</h4>
+    <ul>
+        <li>SELECT de base</li>
+        <li>Filtrage avec WHERE</li>
+        <li>Opérateurs : AND, OR, NOT, IN, BETWEEN, LIKE</li>
+        <li>Tri : ORDER BY ASC/DESC</li>
+        <li>Limitation : LIMIT</li>
+    </ul>
+
+    <h4>Ressources :</h4>
+    <ul>
+        <li>Site : https://sqlbolt.com/ (exercices interactifs)</li>
+        <li>Livre : « SQL Practice Problems » de Sylvia Moestl Vasilik</li>
+    </ul>
+
+    <h4>Exercices — Niveau Facile :</h4>
+    <div class="exercise-level easy">Facile</div>
+    <ol>
+        <li>Sélectionnez tous les utilisateurs dont le nom commence par « A »</li>
+        <li>Affichez les produits triés par prix décroissant</li>
+        <li>Sélectionnez les clients qui ont dépensé plus de 1000€</li>
+        <li>Trouvez tous les employés du département « IT »</li>
+    </ol>
+
+    <h4>Exercices — Niveau Moyen :</h4>
+    <div class="exercise-level medium">Moyen</div>
+    <ol>
+        <li>Sélectionnez les commandes passées entre le 1er janvier et le 31 mars 2025</li>
+        <li>Affichez les produits dont le prix est entre 50€ et 200€</li>
+        <li>Trouvez les utilisateurs dont l'email contient « @gmail.com »</li>
+    </ol>
+
+    <h4>Exercices — Niveau Difficile :</h4>
+    <div class="exercise-level hard">Difficile</div>
+    <ol>
+        <li>Écrivez une requête pour afficher tous les clients qui ont commandés mais n'ont jamais payé</li>
+        <li>Créez une requête qui combine 4 conditions différentes avec AND/OR</li>
+    </ol>
+
+    <div class="day-header">Jour 2 — Jointures (JOIN)</div>
+    <h4>Contenu Théorique :</h4>
+    <ul>
+        <li>INNER JOIN</li>
+        <li>LEFT JOIN / RIGHT JOIN</li>
+        <li>JOIN sur plusieurs tables</li>
+        <li>Alias de tables</li>
+    </ul>
+
+    <h4>Exercices — Niveau Facile :</h4>
+    <div class="exercise-level easy">Facile</div>
+    <ol>
+        <li>Affichez le nom du client pour chaque commande (JOIN simple)</li>
+        <li>Listez tous les produits avec leur catégorie</li>
+        <li>Combinez trois tables : Commande, Client, Produit</li>
+    </ol>
+
+    <h4>Exercices — Niveau Moyen :</h4>
+    <div class="exercise-level medium">Moyen</div>
+    <ol>
+        <li>Affichez tous les clients, même ceux sans commande (LEFT JOIN)</li>
+        <li>Trouvez les produits qui n'ont jamais été commandés</li>
+        <li>Comptez le nombre de commandes par client</li>
+    </ol>
+
+    <h4>Exercices — Niveau Difficile :</h4>
+    <div class="exercise-level hard">Difficile</div>
+    <ol>
+        <li>Requête complexe : Affichez le nom du client, le nombre de commandes, et le montant total dépensé</li>
+        <li>Trouvez le produit le plus populaire (le plus commandé)</li>
+        <li>Listez tous les fournisseurs avec leurs produits, y compris ceux sans produits</li>
+    </ol>
+
+    <div class="day-header">Jour 3 — Fonctions d'Agrégation</div>
+    <h4>Contenu Théorique :</h4>
+    <ul>
+        <li>COUNT, SUM, AVG, MIN, MAX</li>
+        <li>GROUP BY</li>
+        <li>HAVING vs WHERE</li>
+        <li>Requêtes avec sous-requêtes</li>
+    </ul>
+
+    <h4>Exercices — Niveau Facile :</h4>
+    <div class="exercise-level easy">Facile</div>
+    <ol>
+        <li>Comptez le nombre total d'utilisateurs</li>
+        <li>Calculez le prix moyen des produits</li>
+        <li>Trouvez le produit le plus cher</li>
+    </ol>
+
+    <h4>Exercices — Niveau Moyen :</h4>
+    <div class="exercise-level medium">Moyen</div>
+    <ol>
+        <li>Affichez le nombre de produits par catégorie</li>
+        <li>Trouvez la catégorie avec le plus de produits</li>
+        <li>Calculez le revenu total par mois pour 2025</li>
+    </ol>
+
+    <h4>Exercices — Niveau Difficile :</h4>
+    <div class="exercise-level hard">Difficile</div>
+    <ol>
+        <li>Requête à trois niveaux : Affichez le nom du client avec le nombre de commandes et le montant total, trié par montant décroissant</li>
+        <li>Trouvez le deuxième produit le plus cher</li>
+        <li>Utilisez HAVING pour filtrer les catégories avec plus de 10 produits</li>
+    </ol>
+
+    <div class="day-header">Jour 4 — Manipulation de Dates</div>
+    <h4>Contenu Théorique :</h4>
+    <ul>
+        <li>Fonctions de date : YEAR(), MONTH(), DAY(), DATE()</li>
+        <li>Opérateurs de date</li>
+        <li>Filtrage par période</li>
+        <li>BETWEEN pour les ranges</li>
+    </ul>
+
+    <h4>Exercices — Niveau Facile :</h4>
+    <div class="exercise-level easy">Facile</div>
+    <ol>
+        <li>Sélectionnez tous les événements de 2025</li>
+        <li>Trouvez les utilisateurs inscrits ce mois-ci</li>
+        <li>Listez les commandes de la semaine dernière</li>
+    </ol>
+
+    <h4>Exercices — Niveau Moyen :</h4>
+    <div class="exercise-level medium">Moyen</div>
+    <ol>
+        <li>Affichez le nombre d'inscriptions par mois en 2025</li>
+        <li>Trouvez les produits ajoutés au cours des 30 derniers jours</li>
+        <li>Calculez le revenu par jour pour janvier 2025</li>
+    </ol>
+
+    <h4>Exercices — Niveau Difficile :</h4>
+    <div class="exercise-level hard">Difficile</div>
+    <ol>
+        <li>Requête complexe : Affichez le nom du client ayant le plus grand nombre d'items en 2025</li>
+        <li>Créez une requête pour afficher les mois avec un gain de plus de 2000€</li>
+        <li>Trouvez la période (jour) la plus active de l'année</li>
+    </ol>
+
+    <div class="day-header">Jour 5 — Requêtes Avancées et Pratique</div>
+    <h4>Contenu Théorique :</h4>
+    <ul>
+        <li>Sous-requêtes</li>
+        <li>UNION</li>
+        <li>UPDATE et DELETE</li>
+        <li>Transactions de base</li>
+    </ul>
+
+    <h4>Exercices — Niveau Facile :</h4>
+    <div class="exercise-level easy">Facile</div>
+    <ol>
+        <li>Mettez à jour le statut d'une commande</li>
+        <li>Supprimez un utilisateur (avec FK handled)</li>
+    </ol>
+
+    <h4>Exercices — Niveau Moyen :</h4>
+    <div class="exercise-level medium">Moyen</div>
+    <ol>
+        <li>Utilisez une sous-requête pour trouver les clients avec plus de moyenne de commandes</li>
+        <li>Créez une requête avec UNION pour combiner deux ensembles de résultats</li>
+    </ol>
+
+    <h4>Exercices — Niveau Difficile :</h4>
+    <div class="exercise-level hard">Difficile</div>
+    <ol>
+        <li>Exercice complet : À partir d'un schéma de base de données existant, écrivez 10 requêtes couvrant tous les aspects vus cette semaine</li>
+        <li>Chronométrez-vous : chaque requête moyenne doit prendre moins de 5 minutes</li>
+    </ol>
+
+    <!-- Semaine 3 -->
+    <div class="week-header">
+        <h2 style="margin:0;border:none;padding:0;color:white;">Semaine 3 : JavaScript Algorithmes</h2>
+    </div>
+    <p><strong>Objectif de la Semaine :</strong> Développer les compétences en logique algorithmique, point faible majeur des étudiants (70% d'échec sur les problèmes complexes).</p>
+
+    <div class="day-header">Jour 1 — Manipulation de Chaînes</div>
+    <h4>Exercices — Niveau Facile :</h4>
+    <div class="exercise-level easy">Facile</div>
+    <ol>
+        <li>Inversez une chaîne sans utiliser reverse()
+            <pre>// Entrée: "hello" → Sortie: "olleh"</pre>
+        </li>
+        <li>Trouvez le nombre de caractères dans une chaîne</li>
+        <li>Vérifiez si une chaîne contient une lettre spécifique</li>
+    </ol>
+
+    <h4>Exercices — Niveau Moyen :</h4>
+    <div class="exercise-level medium">Moyen</div>
+    <ol>
+        <li>Trouvez le mot le plus long dans une phrase
+            <pre>// Entrée: "Le développement web est fascinant" → Sortie: "développement"</pre>
+        </li>
+        <li>Comptez les occurrences d'un caractère</li>
+        <li>Supprimez les caractères en double consécutifs</li>
+    </ol>
+
+    <h4>Exercices — Niveau Difficile :</h4>
+    <div class="exercise-level hard">Difficile</div>
+    <ol>
+        <li>Compression de chaîne : « aaabbbccccc » → « a3b3c5 »</li>
+        <li>Vérification d'anagramme sans méthode intégrée</li>
+        <li>Trouvez tous les palindromes dans une liste</li>
+    </ol>
+
+    <div class="day-header">Jour 2 — Tableaux et Recherche</div>
+    <h4>Exercices — Niveau Facile :</h4>
+    <div class="exercise-level easy">Facile</div>
+    <ol>
+        <li>Trouvez la somme de tous les éléments d'un tableau</li>
+        <li>Trouvez le maximum et le minimum</li>
+        <li>Vérifiez si un élément existe dans un tableau</li>
+    </ol>
+
+    <h4>Exercices — Niveau Moyen :</h4>
+    <div class="exercise-level medium">Moyen</div>
+    <ol>
+        <li>Supprimez les doublons d'un tableau</li>
+        <li>Trouvez l'indice du dernier élément répété</li>
+        <li>Triez un tableau par ordre croissant (sans sort())</li>
+    </ol>
+
+    <h4>Exercices — Niveau Difficile :</h4>
+    <div class="exercise-level hard">Difficile</div>
+    <ol>
+        <li>Trouvez les paires dont la somme égale une valeur donnée
+            <pre>// Entrée: [3, 1, 5, 7, 9, 2, 6, 4, 8], sommeRecherchee = 10
+// Sortie: [[3,7], [1,9], [5,5]...]</pre>
+        </li>
+        <li>Parcourez une matrice en spirale</li>
+        <li>Implémentez votre propre méthode split()</li>
+    </ol>
+
+    <div class="day-header">Jour 3 — Tri et Algorithmes Classiques</div>
+    <h4>Exercices — Niveau Facile :</h4>
+    <div class="exercise-level easy">Facile</div>
+    <ol>
+        <li>Implémentez le tri à bulles (bubble sort)</li>
+        <li>Implémentez la recherche linéaire dans un tableau</li>
+        <li>Comptez les éléments pairs et impairs</li>
+    </ol>
+
+    <h4>Exercices — Niveau Moyen :</h4>
+    <div class="exercise-level medium">Moyen</div>
+    <ol>
+        <li>Triez un tableau dans les deux sens (croissant puis décroissant)</li>
+        <li>Triez par ordre alphabétique sans localeCompare</li>
+        <li>Implémentez un tri par insertion</li>
+    </ol>
+
+    <h4>Exercices — Niveau Difficile :</h4>
+    <div class="exercise-level hard">Difficile</div>
+    <ol>
+        <li>Tri rapide (quick sort) — implémentation basique</li>
+        <li>Fusionnez deux tableaux triés en un seul trié</li>
+        <li>Implémentez le tri par sélection</li>
+    </ol>
+
+    <div class="day-header">Jour 4 — Validation et Structures</div>
+    <h4>Exercices — Niveau Facile :</h4>
+    <div class="exercise-level easy">Facile</div>
+    <ol>
+        <li>Validez les parenthèses : « (()) » → true, « (() » → false</li>
+        <li>Vérifiez si un nombre est positif/négatif/zéro</li>
+        <li>Comptez les voyelles et consonnes</li>
+    </ol>
+
+    <h4>Exercices — Niveau Moyen :</h4>
+    <div class="exercise-level medium">Moyen</div>
+    <ol>
+        <li>Validez les parenthèses avec différents types : « {[(())]} » → true</li>
+        <li>Vérifiez un expression avec parenthèses, crochets et accolades</li>
+        <li>Convertissez une notation simple</li>
+    </ol>
+
+    <h4>Exercices — Niveau Difficile :</h4>
+    <div class="exercise-level hard">Difficile</div>
+    <ol>
+        <li>Vérification complète de balance des parenthèses avec gestion d'erreurs</li>
+        <li>Implémentez une calculette simple avec piles</li>
+        <li>Résolvez le problème des « Tours de Hanoi » (conceptuellement)</li>
+    </ol>
+
+    <div class="day-header">Jour 5 — Problèmes Combinés</div>
+    <h4>Exercices — Examen Blanc :</h4>
+
+    <p><strong>Problème 1 (Facile, 5 min) :</strong></p>
+    <pre>// Créez une fonction qui retourne le mot le plus petit
+// Entrée: "Je suis un étudiant"
+// Sortie: "un"</pre>
+
+    <p><strong>Problème 2 (Moyen, 10 min) :</strong></p>
+    <pre>// Comptez les occurrences de chaque caractère
+// Entrée: "hello"
+// Sortie: {h:1, e:1, l:2, o:1}</pre>
+
+    <p><strong>Problème 3 (Difficile, 15 min) :</strong></p>
+    <pre>// Dessinez un X de hauteur n
+// DessinerX(5)
+//     *       *
+//      *     *
+//       *   *
+//        * *
+//         *
+//        * *
+//       *   *
+//      *     *
+//     *       *</pre>
+
+    <p><strong>Problème 4 (Difficile, 15 min) :</strong></p>
+    <pre>// Implémentez une fonction qui calcule la somme des nombres pairs
+// et impairs séparément dans un tableau</pre>
+
+    <!-- Semaine 4 -->
+    <div class="week-header">
+        <h2 style="margin:0;border:none;padding:0;color:white;">Semaine 4 : POO et Conception</h2>
+    </div>
+    <p><strong>Objectif de la Semaine :</strong> Maîtriser la programmation orientée objet en PHP, les concepts avancés comme le polymorphisme, et comprendre comment ces concepts s'appliquent aux projets réels.</p>
+
+    <div class="day-header">Jour 1 — Fondamentaux POO</div>
+    <h4>Exercices — Niveau Facile :</h4>
+    <div class="exercise-level easy">Facile</div>
+    <ol>
+        <li>Créez une classe « Utilisateur » avec nom, email</li>
+        <li>Ajoutez un constructeur qui initialise ces propriétés</li>
+        <li>Créez des getters et setters</li>
+    </ol>
+
+    <h4>Exercices — Niveau Moyen :</h4>
+    <div class="exercise-level medium">Moyen</div>
+    <ol>
+        <li>Ajoutez une méthode « sePresenter() » qui affiche les informations</li>
+        <li>Créez plusieurs instances et appelez la méthode</li>
+        <li>Ajoutez une validation dans le setter email</li>
+    </ol>
+
+    <h4>Exercices — Niveau Difficile :</h4>
+    <div class="exercise-level hard">Difficile</div>
+    <ol>
+        <li>Créez une classe complète avec :
+            <ul>
+                <li>Propriétés privées</li>
+                <li>Constructeur avec validation</li>
+                <li>Méthodes getters/setters</li>
+                <li>Méthodes métier</li>
+            </ul>
+        </li>
+        <li>Gérez les cas d'erreur avec des exceptions</li>
+    </ol>
+
+    <div class="day-header">Jour 2 — Héritage et Modificateurs d'Accès</div>
+    <h4>Exercices — Niveau Facile :</h4>
+    <div class="exercise-level easy">Facile</div>
+    <ol>
+        <li>Créez une classe « Animal » avec nom, age</li>
+        <li>Créez « Chien » et « Chat » qui héritent de Animal</li>
+        <li>Ajoutez des méthodes spécifiques à chaque classe</li>
+    </ol>
+
+    <h4>Exercices — Niveau Moyen :</h4>
+    <div class="exercise-level medium">Moyen</div>
+    <ol>
+        <li>Créez une classe « Personne » (nom, email)</li>
+        <li>Étendez à « Étudiant » (ajoute formation) et « Enseignant » (ajoute matière)</li>
+        <li>Créez des instances et testez l'accès aux propriétés</li>
+    </ol>
+
+    <h4>Exercices — Niveau Difficile :</h4>
+    <div class="exercise-level hard">Difficile</div>
+    <ol>
+        <li>Système complet :
+            <ul>
+                <li>Abstract « Utilisateur » avec id, nom</li>
+                <li>« Client » et « Admin » qui héritent</li>
+                <li>« Admin » a une méthode « donnerAcces() »</li>
+                <li>Utilisez protected pour les propriétés héritées</li>
+            </ul>
+        </li>
+    </ol>
+
+    <div class="day-header">Jour 3 — Classes Abstraites et Interfaces</div>
+    <h4>Exercices — Niveau Facile :</h4>
+    <div class="exercise-level easy">Facile</div>
+    <ol>
+        <li>Créez une classe abstraite « Forme » avec méthode abstraite « calculerSurface() »</li>
+        <li>Implémentez « Rectangle » et « Cercle »</li>
+    </ol>
+
+    <h4>Exercices — Niveau Moyen :</h4>
+    <div class="exercise-level medium">Moyen</div>
+    <ol>
+        <li>Créez une interface « Comparable » avec méthode « comparer() »</li>
+        <li>Implémentez dans plusieurs classes</li>
+        <li>Montrez quand utiliser interface vs abstract</li>
+    </ol>
+
+    <h4>Exercices — Niveau Difficile :</h4>
+    <div class="exercise-level hard">Difficile</div>
+    <ol>
+        <li>Exercice de soutenance classique :
+            <pre>abstract class Vehicule {
+    protected $marque;
+    abstract public function demarrer();
+}
+
+class Voiture extends Vehicule {
+    public function demarrer() {
+        echo "Démarrage de la voiture...";
+    }
+}</pre>
+        </li>
+        <li>Ajoutez une validation dans le constructeur de la classe abstraite</li>
+    </ol>
+
+    <div class="day-header">Jour 4 — Polymorphisme, Static, et Final</div>
+    <h4>Exercices — Niveau Facile :</h4>
+    <div class="exercise-level easy">Facile</div>
+    <ol>
+        <li>Créez une classe avec méthode statique multiplication()</li>
+        <li>Appelez sans instanciation</li>
+    </ol>
+
+    <h4>Exercices — Niveau Moyen :</h4>
+    <div class="exercise-level medium">Moyen</div>
+    <ol>
+        <li>Utilisez static pour créer un compteur d'instances</li>
+        <li>Implémentez le polymorphisme avec des formes géométriques</li>
+    </ol>
+
+    <h4>Exercices — Niveau Difficile :</h4>
+    <div class="exercise-level hard">Difficile</div>
+    <ol>
+        <li>Exercice classique de soutenance :
+            <pre>class Calculatrice {
+    public static function multiplication($a, $b) {
+        return $a * $b;
+    }
+}
+
+// Appel sans instanciation
+echo Calculatrice::multiplication(5, 3); // 15</pre>
+        </li>
+        <li>Combinez abstract, static, et héritage</li>
+        <li>Expliquez pourquoi utiliser final (et quand)</li>
+    </ol>
+
+    <div class="day-header">Jour 5 — this, self, et parent</div>
+    <h4>Exercices — Niveau Facile :</h4>
+    <div class="exercise-level easy">Facile</div>
+    <ol>
+        <li>Expliquez la différence entre $this et self</li>
+        <li>Créez un exemple avec override de méthode</li>
+    </ol>
+
+    <h4>Exercices — Niveau Moyen :</h4>
+    <div class="exercise-level medium">Moyen</div>
+    <ol>
+        <li>Utilisez parent pour appeler le constructeur parent</li>
+        <li>Implémentez une méthode qui utilise self pour les constantes</li>
+    </ol>
+
+    <h4>Exercices — Niveau Difficile :</h4>
+    <div class="exercise-level hard">Difficile</div>
+    <ol>
+        <li>Exercice complet de soutenance :
+            <pre>abstract class User {
+    protected $nom;
+    
+    public function __construct($nom) {
+        $this->nom = $nom;
+    }
+    
+    abstract public function getRole();
+}
+
+class Employee extends User {
+    public function getRole() {
+        return "Employé";
+    }
+}</pre>
+        </li>
+        <li>Créez Manager qui hérite d'Employee</li>
+        <li>Utilisez $this, self, et parent correctement</li>
+    </ol>
+
+    <!-- Semaine 5 -->
+    <div class="week-header">
+        <h2 style="margin:0;border:none;padding:0;color:white;">Semaine 5 : Intégration Frontend (HTML/CSS/Git)</h2>
+    </div>
+    <p><strong>Objectif de la Semaine :</strong> Maîtriser HTML5 sémantique, CSS avancé, et Git pour la collaboration et la gestion de versions.</p>
+
+    <div class="day-header">Jour 1 — HTML5 Sémantique</div>
+    <h4>Exercices — Niveau Facile :</h4>
+    <div class="exercise-level easy">Facile</div>
+    <ol>
+        <li>Créez une page HTML5 avec header, nav, main, footer</li>
+        <li>Identifiez où utiliser article vs section</li>
+    </ol>
+
+    <h4>Exercices — Niveau Moyen :</h4>
+    <div class="exercise-level medium">Moyen</div>
+    <ol>
+        <li>Transformez une page avec uniquement des divs en HTML sémantique</li>
+        <li>Ajoutez les attributs ARIA de base</li>
+    </ol>
+
+    <h4>Exercices — Niveau Difficile :</h4>
+    <div class="exercise-level hard">Difficile</div>
+    <ol>
+        <li>Créez une structure complète de blog avec :
+            <ul>
+                <li>Header avec navigation</li>
+                <li>Main avec articles</li>
+                <li>Sidebar avec aside</li>
+                <li>Footer</li>
+            </ul>
+        </li>
+        <li>Expliquez vos choix de balises</li>
+    </ol>
+
+    <div class="day-header">Jour 2 — CSS Avancé (Flexbox et Grid)</div>
+    <h4>Exercices — Niveau Facile :</h4>
+    <div class="exercise-level easy">Facile</div>
+    <ol>
+        <li>Créez un menu horizontal avec flexbox</li>
+        <li>Centrez un élément horizontalement et verticalement</li>
+    </ol>
+
+    <h4>Exercices — Niveau Moyen :</h4>
+    <div class="exercise-level medium">Moyen</div>
+    <ol>
+        <li>Créez une grille de produits responsive avec CSS Grid</li>
+        <li>Convertissez un layout flex en grid et vice versa</li>
+    </ol>
+
+    <h4>Exercices — Niveau Difficile :</h4>
+    <div class="exercise-level hard">Difficile</div>
+    <ol>
+        <li>Reproduisez une mise en page complexe (type dashboard)</li>
+        <li>Expliquez la différence entre flex et grid dans votre layout</li>
+        <li>Gérez le responsive pour mobile/tablette/desktop</li>
+    </ol>
+
+    <div class="day-header">Jour 3 — Git Avancé</div>
+    <h4>Exercices — Niveau Facile :</h4>
+    <div class="exercise-level easy">Facile</div>
+    <ol>
+        <li>Créez un repo, faites des commits, poussez sur GitHub</li>
+        <li>Créez une branche, travaillez dessus, fusionnez</li>
+    </ol>
+
+    <h4>Exercices — Niveau Moyen :</h4>
+    <div class="exercise-level medium">Moyen</div>
+    <ol>
+        <li>Utilisez git reset pour annuler des commits</li>
+        <li>Expérimentez avec git restore pour fichiers spécifiques</li>
+        <li>Comparez merge et rebase dans des scénarios différents</li>
+    </ol>
+
+    <h4>Exercices — Niveau Difficile :</h4>
+    <div class="exercise-level hard">Difficile</div>
+    <ol>
+        <li>Scénario : vous avez fait des commits sur branche incorrecte
+            <ul>
+                <li>Rebasez sur la bonne branche</li>
+                <li>Gardez un historique propre</li>
+            </ul>
+        </li>
+        <li>Résolvez un conflit de fusion simple</li>
+        <li>Expliquez quand utiliser chaque approche</li>
+    </ol>
+
+    <div class="day-header">Jour 4 — Docker Fondamentaux</div>
+    <h4>Exercices — Niveau Facile :</h4>
+    <div class="exercise-level easy">Facile</div>
+    <ol>
+        <li>Installez Docker et lancez votre premier container</li>
+        <li>Listez les containers et images</li>
+    </ol>
+
+    <h4>Exercices — Niveau Moyen :</h4>
+    <div class="exercise-level medium">Moyen</div>
+    <ol>
+        <li>Créez un Dockerfile simple pour une application PHP</li>
+        <li>Build et lancez votre image</li>
+        <li>Expliquez chaque instruction</li>
+    </ol>
+
+    <h4>Exercices — Niveau Difficile :</h4>
+    <div class="exercise-level hard">Difficile</div>
+    <ol>
+        <li>Dockerisez une application complète (PHP + MySQL + Nginx)</li>
+        <li>Utilisez docker-compose pour orchestrer</li>
+        <li>Expliquez les avantages par rapport aux VMs</li>
+    </ol>
+
+    <div class="day-header">Jour 5 — Intégration et Projet</div>
+    <h4>Exercice Final :</h4>
+    <ol>
+        <li>Créez une page HTML/CSS complète pour votre projet</li>
+        <li>Utilisez Git pour tout le processus (commits, branches)</li>
+        <li>Documentez comment dockeriser l'application</li>
+    </ol>
+
+    <!-- Semaine 6 -->
+    <div class="week-header">
+        <h2 style="margin:0;border:none;padding:0;color:white;">Semaine 6 : Révision Générale et Simulation</h2>
+    </div>
+    <p><strong>Objectif de la Semaine :</strong> Consolidation de toutes les connaissances, simulation de soutenance, et préparation mentale.</p>
+
+    <div class="day-header">Jour 1 — Révision UML et SQL</div>
+    <h4>Activités :</h4>
+    <ol>
+        <li>Review all your diagrams</li>
+        <li>Run through 10 SQL queries under time pressure</li>
+        <li>Identify and fix weak areas</li>
+    </ol>
+
+    <div class="day-header">Jour 2 — Révision JavaScript et POO</div>
+    <h4>Activités :</h4>
+    <ol>
+        <li>Complete 5 JavaScript algorithm exercises under exam conditions</li>
+        <li>Code 3 POO exercises from scratch</li>
+        <li>Review and self-correct</li>
+    </ol>
+
+    <div class="day-header">Jour 3 — Révision Intégration</div>
+    <h4>Activités :</h4>
+    <ol>
+        <li>Create a complete HTML/CSS page from scratch (1 hour)</li>
+        <li>Set up Git workflow for a small project</li>
+        <li>Review Docker concepts</li>
+    </ol>
+
+    <div class="day-header">Jour 4 — Simulation de Soutenance</div>
+    <h4>Activité Complète :</h4>
+    <ol>
+        <li>Present your project to a peer or mentor</li>
+        <li>Time yourself: 15-20 minutes presentation</li>
+        <li>Answer questions as if in real soutenance</li>
+        <li>Get feedback and adjust</li>
+    </ol>
+
+    <h4>Questions Types à Pratiquer :</h4>
+    <ul>
+        <li>Expliquez votre diagramme de classe</li>
+        <li>Pourquoi avez-vous choisi cette conception ?</li>
+        <li>Explain a complex SQL query you wrote</li>
+        <li>Walk through your JavaScript algorithm</li>
+        <li>What would you change if you started over?</li>
+    </ul>
+
+    <div class="day-header">Jour 5 — Préparation Finale</div>
+    <h4>Checklist Finale :</h4>
+    <ol>
+        <li>Verify all project components are working</li>
+        <li>Review your presentation slides</li>
+        <li>Prepare answers to likely questions</li>
+        <li>Rest and be confident</li>
+    </ol>
+
+    <h4>Questions à Anticiper :</h4>
+    <ul>
+        <li>Points faibles identifiés dans votre projet</li>
+        <li>Améliorations possibles</li>
+        <li>Difficultés rencontrées et solutions</li>
+        <li>Choix techniques justifiés</li>
+    </ul>
+
+    <hr>
+
+    <!-- Section 5: Résumé -->
+    <h2>5. Résumé des Points Clés</h2>
+    <div class="summary-box">
+        <h3>Points Essentiels à Retenir</h3>
+        <ol>
+            <li><strong>La Logique Algorithmique est Cruciale</strong> — Les problèmes JavaScript ont montré 70% de taux d'échec. Pratiquez quotidiennement.</li>
+            <li><strong>Les Diagrammes de Classe UML Nécessitent du Travail</strong> — Les clés étrangères, les classes abstraites, et les relations sont fréquemment mal compris.</li>
+            <li><strong>Les Dates en SQL Sont Problématiques</strong> — Maîtrisez les fonctions de date et le filtrage par périodes.</li>
+            <li><strong>La POO Requiert Compréhension, Pas Mémorisation</strong> — Sachez quand utiliser chaque concept.</li>
+            <li><strong>Pratiquez Sous Pression</strong> — Chronométrez-vous pendant les exercices pour simuler les conditions d'examen.</li>
+            <li><strong>La Communication Compte</strong> — Soyez prêt à expliquer et justifier vos choix verbalement.</li>
+        </ol>
+    </div>
+
+    <hr>
+
+    <!-- Section 6: Annexe -->
+    <h2>6. Annexe : Exercices Supplémentaires</h2>
+
+    <h3>JavaScript — 15 Questions Supplémentaires</h3>
+
+    <h4>Facile (5 questions)</h4>
+    <ol>
+        <li>Retournez la somme d'un tableau</li>
+        <li>Trouvez le maximum d'un tableau</li>
+        <li>Vérifiez si un nombre est pair</li>
+        <li>Comptez les éléments d'un tableau</li>
+        <li>Retournez le premier élément d'un tableau</li>
+    </ol>
+
+    <h4>Moyen (5 questions)</h4>
+    <ol>
+        <li>Inversez un tableau sans reverse()</li>
+        <li>Trouvez le mot le plus long</li>
+        <li>Supprimez les doublons</li>
+        <li>Fusionnez deux tableaux triés</li>
+        <li>Vérifiez si palindrome</li>
+    </ol>
+
+    <h4>Difficile (5 questions)</h4>
+    <ol>
+        <li>Compressez une chaîne (« aaabbb » → « a3b3 »)</li>
+        <li>Validez les parenthèses équilibrées</li>
+        <li>Parcourez une matrice en spirale</li>
+        <li>Trouvez les paires dont la somme = X</li>
+        <li>Implémentez votre propre split()</li>
+    </ol>
+
+    <h3>SQL — 15 Requêtes Supplémentaires</h3>
+
+    <h4>Facile (5)</h4>
+    <ol>
+        <li>Sélectionnez tous les utilisateurs actifs</li>
+        <li>Comptez les produits par catégorie</li>
+        <li>Trouvez le prix moyen</li>
+        <li>Affichez par ordre alphabétique</li>
+        <li>Sélectionnez avec LIKE</li>
+    </ol>
+
+    <h4>Moyen (5)</h4>
+    <ol>
+        <li>JOIN trois tables</li>
+        <li>GROUP BY avec COUNT</li>
+        <li>HAVING pour filtrer agrégats</li>
+        <li>Sous-requête pour max</li>
+        <li>BETWEEN pour dates</li>
+    </ol>
+
+    <h4>Difficile (5)</h4>
+    <ol>
+        <li>Requête avec sous-requête et JOIN</li>
+        <li>Calcul de moyenne mobile</li>
+        <li>Classement avec ROW_NUMBER</li>
+        <li>Requête récursive (si applicable)</li>
+        <li>Transaction avec rollback</li>
+    </ol>
+
+    <hr>
+
+    <div class="cover-page" style="margin-top:2em;">
+        <div class="cover-info">
+            <p><strong>Document créé sur la base de l'analyse des données de validation des étudiants de 1ère année — Année précédente</strong></p>
+            <p><em>Ce guide est destiné aux futurs étudiants pour les aider à se préparer efficacement à leur soutenance</em></p>
+        </div>
+    </div>
+
+</body>
+</html>
