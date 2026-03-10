@@ -1,2 +1,5 @@
 # Guide Complet de Préparation pour la Soutenance PFR
+
+https://abdeladimabid.github.io/Guide-Complet-de-Pr-paration-la-Soutenance/
+
 Ce Guide complet basé sur l’analyse approfondie des données de validation des étudiants de 1ère année de l’année 2025/2025. Il présente les questions fréquentes en soutenance, les taux de réussite par catégorie, les concepts à renforcer et un plan de révision structuré sur 6 semaines pour une préparation efficace et stratégique.
