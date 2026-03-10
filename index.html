@@ -1,10 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Defense Preparation Guide</title>
+    <title>Préparation à la Soutenance | S.P.F.R</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
+        :root {
+            --primary: #6366f1;
+            --primary-hover: #4f46e5;
+            --bg-dark: #0f172a;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --card-bg: rgba(30, 41, 59, 0.7);
+            --card-border: rgba(255, 255, 255, 0.1);
+            --accent: #38bdf8;
+            --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
         * {
             margin: 0;
             padding: 0;
@@ -12,135 +28,236 @@
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            font-family: 'Outfit', -apple-system, sans-serif;
+            background-color: var(--bg-dark);
+            background-image:
+                radial-gradient(at 0% 0%, rgba(99, 102, 241, 0.15) 0px, transparent 50%),
+                radial-gradient(at 100% 100%, rgba(56, 189, 248, 0.15) 0px, transparent 50%);
+            color: var(--text-main);
             min-height: 100vh;
             display: flex;
             align-items: center;
             justify-content: center;
-            padding: 20px;
+            padding: 24px;
+            overflow-x: hidden;
         }
 
         .container {
-            background: white;
-            border-radius: 20px;
-            padding: 60px 40px;
-            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
-            max-width: 600px;
+            max-width: 1000px;
             width: 100%;
+            position: relative;
+            z-index: 1;
+            animation: fadeIn 0.8s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        header {
             text-align: center;
+            margin-bottom: 64px;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 6px 16px;
+            background: rgba(99, 102, 241, 0.1);
+            border: 1px solid rgba(99, 102, 241, 0.2);
+            border-radius: 100px;
+            color: var(--accent);
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 24px;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
         }
 
         h1 {
-            color: #2d3748;
-            font-size: 2rem;
-            margin-bottom: 10px;
+            font-size: clamp(2.5rem, 8vw, 3.5rem);
             font-weight: 700;
+            line-height: 1.1;
+            margin-bottom: 20px;
+            background: linear-gradient(to bottom right, #fff, #94a3b8);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
 
         .subtitle {
-            color: #718096;
-            font-size: 1rem;
-            margin-bottom: 40px;
+            font-size: 1.125rem;
+            color: var(--text-muted);
+            line-height: 1.6;
+            max-width: 600px;
+            margin: 0 auto;
         }
 
-        .links {
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 24px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid var(--card-border);
+            border-radius: 24px;
+            padding: 40px;
+            text-decoration: none;
+            color: inherit;
+            transition: var(--transition);
             display: flex;
             flex-direction: column;
             gap: 20px;
+            position: relative;
+            overflow: hidden;
         }
 
-        .link-card {
-            display: block;
-            text-decoration: none;
-            padding: 30px;
-            border-radius: 12px;
-            border: 2px solid #e2e8f0;
-            transition: all 0.3s ease;
-            text-align: left;
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, transparent, rgba(99, 102, 241, 0.05), transparent);
+            transform: translateX(-100%);
+            transition: 0.6s;
         }
 
-        .link-card:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-            border-color: #667eea;
+        .card:hover {
+            transform: translateY(-8px);
+            border-color: rgba(99, 102, 241, 0.4);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            background: rgba(30, 41, 59, 0.8);
         }
 
-        .link-card.detailed {
-            background: linear-gradient(to right, #f7fafc, #ffffff);
+        .card:hover::before {
+            transform: translateX(100%);
         }
 
-        .link-card.simple {
-            background: linear-gradient(to right, #f7fafc, #ffffff);
-        }
-
-        .link-title {
-            font-size: 1.25rem;
-            font-weight: 600;
-            color: #2d3748;
-            margin-bottom: 8px;
+        .card-header {
             display: flex;
             align-items: center;
-            gap: 10px;
+            gap: 16px;
         }
 
-        .link-desc {
-            color: #718096;
-            font-size: 0.95rem;
-            line-height: 1.5;
-        }
-
-        .icon {
+        .icon-box {
+            width: 48px;
+            height: 48px;
+            background: rgba(99, 102, 241, 0.1);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             font-size: 1.5rem;
+            transition: var(--transition);
         }
 
-        .footer {
-            margin-top: 40px;
-            color: #a0aec0;
+        .card:hover .icon-box {
+            transform: scale(1.1) rotate(5deg);
+            background: var(--primary);
+        }
+
+        .card h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+
+        .card p {
+            color: var(--text-muted);
+            font-size: 1rem;
+            line-height: 1.6;
+            font-weight: 300;
+        }
+
+        .card-footer {
+            margin-top: auto;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--primary);
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+
+        .arrow {
+            transition: var(--transition);
+        }
+
+        .card:hover .arrow {
+            transform: translateX(4px);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 64px;
+            color: var(--text-muted);
             font-size: 0.875rem;
+            letter-spacing: 0.025em;
         }
 
-        @media (max-width: 480px) {
-            .container {
-                padding: 40px 24px;
+        @media (max-width: 768px) {
+            .grid {
+                grid-template-columns: 1fr;
             }
-            
-            h1 {
-                font-size: 1.5rem;
+
+            .card {
+                padding: 32px;
             }
         }
     </style>
 </head>
+
 <body>
     <div class="container">
-        <h1>Guide de préparation à la soutenance</h1>
-        <p class="subtitle">Choisissez le format qui vous convient le mieux</p>
-        
-        <div class="links">
-            <a href="Guide_Soutenance.html" class="link-card detailed">
-                <div class="link-title">
-                    <span class="icon">📚</span>
-                    Guide Complet de Préparation à la Soutenance
+        <header>
+            <div class="badge">Session 2026</div>
+            <h1>Guide Complet de<br>Préparation à la Soutenance</h1>
+            <p class="subtitle">Optimisez vos chances de réussite avec nos ressources basées sur les retours
+                d'expériences réels.</p>
+        </header>
+
+        <div class="grid">
+            <a href="Guide_Soutenance.html" class="card">
+                <div class="card-header">
+                    <div class="icon-box">📚</div>
+                    <h2>Guide Interactif Complet</h2>
                 </div>
-                <div class="link-desc">
-                    Ce guide complet a été élaboré à partir de l'analyse approfondie des données de validation des étudiants de 1ère année de l'année dernière. Il présente une vue d'ensemble des questions posées lors des soutenances, les taux de réussite par catégorie, les concepts qui nécessitent une attention particulière, ainsi qu'un plan de révision structuré sur 6 semaines.
+                <p>Une immersion totale dans le processus de soutenance. Analyse des données de l'année précédente, taux
+                    de réussite par catégorie et plan de révision structuré sur 6 semaines.</p>
+                <div class="card-footer">
+                    Explorer le guide <span class="arrow">→</span>
                 </div>
             </a>
 
-            <a href="Guide_Soutenance_Simple.html" class="link-card simple">
-                <div class="link-title">
-                    <span class="icon">📋</span>
-                    Référence rapide
+            <a href="Guide_Soutenance_Simple.html" class="card">
+                <div class="card-header">
+                    <div class="icon-box">📋</div>
+                    <h2>Référence Rapide (Flash)</h2>
                 </div>
-                <div class="link-desc">
-                    Résumé condensé avec les statistiques clés, les sujets prioritaires et les concepts essentiels pour une révision rapide avant votre soutenance.
+                <p>L'essentiel en un coup d'œil. Statistiques clés, sujets prioritaires et concepts fondamentaux pour
+                    une révision efficace et rapide de dernière minute.</p>
+                <div class="card-footer">
+                    Voir l'essentiel <span class="arrow">→</span>
                 </div>
             </a>
         </div>
 
-        <div class="footer">
-            Basé sur les données de validation des années précédentes.
-        </div>
+        <footer>
+            &copy; By Abdeladim Abid • Basé sur les données de validation de l'année 2024/2025.
+        </footer>
     </div>
 </body>
+
 </html>
